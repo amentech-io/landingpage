@@ -1,5 +1,13 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/fonts', '@nuxt/eslint', '@vueuse/nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n',
+    '@nuxt/fonts',
+    '@nuxt/eslint',
+    '@vueuse/nuxt',
+    'shadcn-nuxt',
+    '@nuxtjs/color-mode',
+  ],
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
@@ -23,5 +31,9 @@ export default defineNuxtConfig({
       // { code: 'ar', language: 'ar-DZ', file: 'ar.yml', name: 'العربية', dir: 'rtl' },
     ],
     defaultLocale: 'fr',
+  },
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui'
   },
 })
