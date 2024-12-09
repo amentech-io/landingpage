@@ -94,20 +94,29 @@ const list = [
 
     </div>
 
-    <div class="mt-5 p-6 flex flex-col gap-y-12 rounded-[40px]
-        bg-gradient-to-r from-0% via-49% to-100%
-        from-[#E6FFED] via-white to-[#E6FFED]
+    <div class="mt-5 py-6 flex flex-col gap-y-12
+      rounded-[40px] relative overflow-hidden
+      bg-gradient-to-r from-0% via-49% to-100%
+      from-[#E6FFED] via-white to-[#E6FFED]
+      after:w-24 after:inset-y-0   after:absolute
+      after:bg-gradient-to-r after:from-[#E6FFED]
+      before:w-24 before:inset-y-0 before:end-0 before:z-10 before:absolute
+      before:bg-gradient-to-l before:from-[#E6FFED]
     ">
       <p class="text-center text-2xl">
         Trusted by over All these companies of all sizes
       </p>
 
-      <ul class="flex transition-[filter] gap-24 justify-center">
-        <li class="grayscale hover:grayscale-0"><img src="/partner-logo-saa.png" alt="saa"></li>
-        <li class="grayscale hover:grayscale-0"><img src="/partner-logo-ciar.png" alt="ciar"></li>
-        <li class="grayscale hover:grayscale-0"><img src="/partner-logo-cash.png" alt="cash"></li>
-        <li class="grayscale hover:grayscale-0"><img src="/partner-logo-asf.png" alt="asf"></li>
-      </ul>
+      <div class="group flex items-center overflow-hidden">
+        <template v-for="i in 4" :key="i">
+          <ul class="partners-logo _shrink-0 flex transition-[filter] _justify-center">
+            <li class="grayscale shrink-0 w-52 hover:grayscale-0"><img src="/partner-logo-saa.png" alt="saa"></li>
+            <li class="grayscale shrink-0 w-52 hover:grayscale-0"><img src="/partner-logo-ciar.png" alt="ciar"></li>
+            <li class="grayscale shrink-0 w-52 hover:grayscale-0"><img src="/partner-logo-cash.png" alt="cash"></li>
+            <li class="grayscale shrink-0 w-52 hover:grayscale-0"><img src="/partner-logo-asf.png" alt="asf"></li>
+          </ul>
+        </template>
+      </div>
     </div>
   </section>
 </template>
@@ -115,5 +124,23 @@ const list = [
 <style>
 .card-animate {
   opacity: 0;
+}
+
+@keyframes infinite-slide {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.partners-logo {
+  animation: infinite-slide 12s linear infinite;
+}
+
+.group:hover .partners-logo {
+  animation-play-state: paused
 }
 </style>
