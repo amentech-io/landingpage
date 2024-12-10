@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { animate } from 'motion'
+import { animate } from 'motion-v'
 
 let animationGrid: any
 let animationBg: any

@@ -32,9 +32,12 @@ dependencies:
   clsx:
     specifier: ^2.1.1
     version: 2.1.1
-  motion:
-    specifier: ^11.12.0
-    version: 11.13.1
+  install:
+    specifier: ^0.13.0
+    version: 0.13.0
+  motion-v:
+    specifier: ^0.4.1
+    version: 0.4.1(typescript@5.7.2)
   nuxt:
     specifier: ^3.14.1592
     version: 3.14.1592(eslint@9.16.0)(rollup@4.28.1)(typescript@5.7.2)(vite@6.0.3)
@@ -4367,8 +4370,8 @@ packages:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: false
 
-  /framer-motion@11.13.1:
-    resolution: {integrity: sha512-F40tpGTHByhn9h3zdBQPcEro+pSLtzARcocbNqAyfBI+u9S+KZuHH/7O9+z+GEkoF3eqFxfvVw0eBDytohwqmQ==}
+  /framer-motion@11.11.11:
+    resolution: {integrity: sha512-tuDH23ptJAKUHGydJQII9PhABNJBpB+z0P1bmgKK9QFIssHGlfPd6kxMq00LSKwE27WFsb2z0ovY0bpUyMvfRw==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0
@@ -4381,8 +4384,6 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      motion-dom: 11.13.0
-      motion-utils: 11.13.0
       tslib: 2.8.1
     dev: false
 
@@ -4795,6 +4796,11 @@ packages:
   /ini@4.1.1:
     resolution: {integrity: sha512-QQnnxNyfvmHFIsj7gkPcYymR8Jdw/o7mp5ZFihxn6h8Ci6fh3Dx4E1gPjpQEpIuPo9XVNY/ZUwh4BPMjGyL01g==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    dev: false
+
+  /install@0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
     dev: false
 
   /ioredis@5.4.1:
@@ -5440,30 +5446,16 @@ packages:
       pkg-types: 1.2.1
       ufo: 1.5.4
 
-  /motion-dom@11.13.0:
-    resolution: {integrity: sha512-Oc1MLGJQ6nrvXccXA89lXtOqFyBmvHtaDcTRGT66o8Czl7nuA8BeHAd9MQV1pQKX0d2RHFBFaw5g3k23hQJt0w==}
-    dev: false
-
-  /motion-utils@11.13.0:
-    resolution: {integrity: sha512-lq6TzXkH5c/ysJQBxgLXgM01qwBH1b4goTPh57VvZWJbVJZF/0SB31UWEn4EIqbVPf3au88n2rvK17SpDTja1A==}
-    dev: false
-
-  /motion@11.13.1:
-    resolution: {integrity: sha512-64+QpZQv8WJJFn+tEEzX04il9s6ReA6lhKRZaxzD6SunGqoaq5g+AFVfcKWme8N83eytUOpGp7mpfJ9cyZlhAA==}
-    peerDependencies:
-      '@emotion/is-prop-valid': '*'
-      react: ^18.0.0
-      react-dom: ^18.0.0
-    peerDependenciesMeta:
-      '@emotion/is-prop-valid':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
+  /motion-v@0.4.1(typescript@5.7.2):
+    resolution: {integrity: sha512-sl3qPrFx0Pf1H3PDvbe2A328kH57L5M7jNS7DYAIH5rOSFTvs0qeNpljsxORAoZZvNVcTGpgQzp3a3dS5+Kndg==}
     dependencies:
-      framer-motion: 11.13.1
-      tslib: 2.8.1
+      '@vueuse/core': 12.0.0(typescript@5.7.2)
+      framer-motion: 11.11.11
+    transitivePeerDependencies:
+      - '@emotion/is-prop-valid'
+      - react
+      - react-dom
+      - typescript
     dev: false
 
   /mri@1.2.0:

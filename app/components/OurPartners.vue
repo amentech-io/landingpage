@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { animate, inView, stagger } from 'motion'
+import { animate, inView, stagger } from 'motion-v'
 let stopInView: any
 let animateRef: any
 
