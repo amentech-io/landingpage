@@ -12,7 +12,7 @@ onMounted(() => {
       delay: stagger(0.1)
     })
 
-    return () => animateRef.stop()
+    // return () => animateRef.stop()
   },
     { margin: "0px 0px -300px 0px" }
   )
@@ -21,6 +21,7 @@ onMounted(() => {
 onUnmounted(() => {
 
   stopInView()
+  animateRef.stop()
 })
 
 
@@ -108,7 +109,7 @@ const list = [
       </p>
 
       <div class="group flex items-center overflow-hidden">
-        <template v-for="i in 4" :key="i">
+        <template v-for="i in 5" :key="i">
           <ul class="partners-logo _shrink-0 flex transition-[filter] _justify-center">
             <li class="grayscale shrink-0 w-52 hover:grayscale-0"><img src="/partner-logo-saa.png" alt="saa"></li>
             <li class="grayscale shrink-0 w-52 hover:grayscale-0"><img src="/partner-logo-ciar.png" alt="ciar"></li>
