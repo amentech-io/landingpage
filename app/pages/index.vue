@@ -2,4 +2,5 @@
   <Hero />
   <OurPartners />
   <OurSolutions />
+  <AppFeatures />
 </template>

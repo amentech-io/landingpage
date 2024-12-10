@@ -73,8 +73,8 @@ const tabsList = {
     <Tabs default-value="vie" class="mt-12">
       <TabsList class="mx-auto mb-20 mt-12 grid w-[1149px] grid-cols-3 rounded-full bg-[#E6FFED] p-3">
         <TabsTrigger
-          value="dommage" class="py-5 text-2xl
-          data-[state=active]:rounded-full
+          value="dommage" class="rounded-full py-5
+          text-2xl text-[#7CAC88]
           data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#00200B]
           data-[state=active]:to-[#00862E]
           data-[state=active]:text-white data-[state=active]:shadow-none
@@ -82,8 +82,8 @@ const tabsList = {
           Assurance Dommage
         </TabsTrigger>
         <TabsTrigger
-          value="vie" class="py-5 text-2xl
-          data-[state=active]:rounded-full
+          value="vie" class="rounded-full py-5
+          text-2xl text-[#7CAC88]
           data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#00200B]
           data-[state=active]:to-[#00862E]
           data-[state=active]:text-white data-[state=active]:shadow-none
@@ -91,8 +91,8 @@ const tabsList = {
           Assurance Vie
         </TabsTrigger>
         <TabsTrigger
-          value="assistance" class="py-5 text-2xl
-          data-[state=active]:rounded-full
+          value="assistance" class="rounded-full py-5
+          text-2xl text-[#7CAC88]
           data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#00200B]
           data-[state=active]:to-[#00862E]
           data-[state=active]:text-white data-[state=active]:shadow-none
