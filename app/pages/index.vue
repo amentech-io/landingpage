@@ -3,4 +3,5 @@
   <OurPartners />
   <OurSolutions />
   <AppFeatures />
+  <AppComparison />
 </template>
