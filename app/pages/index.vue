@@ -4,4 +4,5 @@
   <OurSolutions />
   <AppFeatures />
   <AppComparison />
+  <AppDigitalisation />
 </template>
