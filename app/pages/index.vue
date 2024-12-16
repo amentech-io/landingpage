@@ -5,4 +5,5 @@
   <AppFeatures />
   <AppComparison />
   <AppDigitalisation />
+  <RecentBlog />
 </template>
