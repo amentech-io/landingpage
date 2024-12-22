@@ -6,4 +6,5 @@
   <AppComparison />
   <AppDigitalisation />
   <RecentBlog />
+  <AppFooter />
 </template>
